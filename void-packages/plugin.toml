@@ -1,0 +1,41 @@
+id = "Anachron/void-packages"
+name = "Void Packages"
+version = "1.0.0"
+min_noctalia = "5.0.0"
+author = "Anachron"
+license = "MIT"
+tags = ["Void", "xbps", "package", "manager"]
+icon = "package"
+description = "Statistics about void linux packages."
+
+[[widget]]
+id = "void-packages"
+entry = "widget.luau"
+
+[[service]]
+id = "void-packages-service"
+entry = "service.luau"
+
+  [[setting]]
+  key = "maintainer_mail"
+  type = "string_list"
+  label_key = "settings.maintainer_mail.label"
+  description_key = "settings.maintainer_mail.description"
+  default = []
+
+  [[setting]]
+  key = "checks_per_day"
+  type = "int"
+  label_key = "settings.checks_per_day.label"
+  description_key = "settings.checks_per_day.description"
+  default = 24
+  min = 1
+  max = 96
+  step = 1
+
+  [[setting]]
+  key = "remote_updates"
+  type = "boolean"
+  label_key = "settings.remote_updates.label"
+  description_key = "settings.remote_updates.description"
+  default = false

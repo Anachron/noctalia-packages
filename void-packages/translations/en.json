@@ -1,0 +1,16 @@
+{
+  "settings": {
+    "maintainer_mail": {
+      "label": "Maintainer E-Mail",
+      "description": "Use address@domain.com syntax (without name). Defaults to git user.email"
+    },
+    "checks_per_day": {
+      "label": "Checks per day",
+      "description": "How often should updates be checked per day? Defaults to hourly (24)"
+    },
+    "remote_updates": {
+      "label": "Remote Updates",
+      "description": "Enable remote (upstream) update checks?"
+    }
+  }
+}
