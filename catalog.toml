@@ -1,0 +1,10 @@
+[[plugin]]
+id = "Anachron/void-packages"
+name = "Void Packages"
+version = "1.0.0"
+min_noctalia = "5.0.0"
+author = "Anachron"
+license = "MIT"
+tags = ["Void", "xbps", "package", "manager"]
+icon = "package"
+description = "Statistics about void linux packages."
